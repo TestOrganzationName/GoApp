@@ -5,6 +5,7 @@
 *.so
 *.dylib
 goapp
+goapp-web
 
 # Test binary, built with `go test -c`
 *.test
