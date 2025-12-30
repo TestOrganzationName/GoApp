@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Game - Web Edition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Go Game</h1>
+            <p class="subtitle">Classic board game in your browser</p>
+        </header>
+
+        <div class="game-info">
+            <div class="current-player">
+                <span class="label">Current Turn:</span>
+                <span id="currentPlayer" class="player-indicator">Black</span>
+            </div>
+            <div class="game-status">
+                <span id="gameStatus">Game in progress</span>
+            </div>
+        </div>
+
+        <div class="board-container">
+            <div id="board" class="board"></div>
+        </div>
+
+        <div class="controls">
+            <button id="passBtn" class="btn btn-secondary">Pass Turn</button>
+            <button id="resetBtn" class="btn btn-primary">New Game</button>
+        </div>
+
+        <div class="rules">
+            <h2>How to Play</h2>
+            <ul>
+                <li>Click on an intersection to place a stone</li>
+                <li>Black plays first</li>
+                <li>Stones are captured when they have no liberties (empty adjacent spaces)</li>
+                <li>You cannot place a stone that would have no liberties (suicide rule)</li>
+                <li>Click "Pass Turn" to skip your turn</li>
+                <li>Game ends when both players pass consecutively</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
